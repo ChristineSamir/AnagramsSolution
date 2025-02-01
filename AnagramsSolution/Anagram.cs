@@ -66,7 +66,7 @@ public class Anagram
 
     public List<string> GetAnagram(string search)
     {
-        // return 
+        // Get Anagram list in O(1) 
         var startTime = DateTime.Now;
 
         var anagramValues = _anagramDictionary.TryGetValue(search.ToLower().Trim(), out var anagrams) ? anagrams : new List<string>();
